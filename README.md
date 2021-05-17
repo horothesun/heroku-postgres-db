@@ -23,7 +23,7 @@ Reference: [Heroku authentication](https://help.heroku.com/PBGP6IDE/how-should-i
 ## DB provisioning
 
 ```bash
-BASE_APP_NAME=<BASE_APP_NAME> ./provision_db.sh
+HEROKU_APP_BASE_NAME=<HEROKU_APP_BASE_NAME> ./provision_db.sh
 ```
 
 ## Get default DB credentials
