@@ -10,7 +10,19 @@ Provision a Heroku Postgres DB.
 
 ## Setup
 
-Create an access token with `heroku authorizations:create` ([reference](https://help.heroku.com/PBGP6IDE/how-should-i-generate-an-api-key-that-allows-me-to-use-the-heroku-platform-api)) and store it in the `HEROKU_API_KEY` environment variable.
+Create an access token with
+
+```bash
+heroku authorizations:create --description 'Your token description'
+```
+
+([reference](https://help.heroku.com/PBGP6IDE/how-should-i-generate-an-api-key-that-allows-me-to-use-the-heroku-platform-api)) and store it in the `HEROKU_API_KEY` environment variable.
+
+## DB provisioning
+
+```bash
+BASE_APP_NAME=<BASE_APP_NAME> ./provision_db.sh
+```
 
 ## Get default DB credentials
 
