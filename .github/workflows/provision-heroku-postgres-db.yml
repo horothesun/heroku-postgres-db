@@ -22,3 +22,4 @@ jobs:
       env:
         HEROKU_APP_BASE_NAME: ${{ github.event.inputs.herokuAppBaseName }}
         HEROKU_REGION: ${{ github.event.inputs.herokuRegion }}
+        HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
