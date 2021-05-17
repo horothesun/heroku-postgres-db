@@ -2,12 +2,13 @@ name: Provision Heroku Postgres DB
 
 on:
   workflow_dispatch: # enable manual execution
-    herokuAppBaseName:
-      description: Heroku app base name
-      required: true
-    herokuRegion:
-      description: 'Heroku region'
-      default: eu
+    inputs:
+      herokuAppBaseName:
+        description: Heroku app base name
+        required: true
+      herokuRegion:
+        description: 'Heroku region'
+        default: eu
 
 jobs:
   provisionDB:
