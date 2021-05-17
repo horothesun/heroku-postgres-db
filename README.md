@@ -1,6 +1,6 @@
 # Heroku Postgres DB
 
-Provision a Heroku Postgres DB.
+[![Provision Heroku Postgres DB](https://github.com/horothesun/heroku-postgres-db/actions/workflows/provision-heroku-postgres-db.yml/badge.svg)](https://github.com/horothesun/heroku-postgres-db/actions/workflows/provision-heroku-postgres-db.yml)
 
 ## Requirements
 
