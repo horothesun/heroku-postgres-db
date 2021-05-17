@@ -16,7 +16,9 @@ Create an access token with
 heroku authorizations:create --description 'Your token description'
 ```
 
-([reference](https://help.heroku.com/PBGP6IDE/how-should-i-generate-an-api-key-that-allows-me-to-use-the-heroku-platform-api)) and store it in the `HEROKU_API_KEY` environment variable.
+and store it in the `HEROKU_API_KEY` environment variable.
+
+Reference: [Heroku authentication](https://help.heroku.com/PBGP6IDE/how-should-i-generate-an-api-key-that-allows-me-to-use-the-heroku-platform-api).
 
 ## DB provisioning
 
