@@ -1,0 +1,23 @@
+name: Provision Heroku Postgres DB
+
+on:
+  workflow_dispatch: # enable manual execution
+    herokuAppBaseName:
+      description: Heroku app base name
+      required: true
+    herokuRegion:
+      description: 'Heroku region'
+      default: eu
+
+jobs:
+  provisionDB:
+    runs-on: ubuntu-20.04
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Provision DB
+      run: ./provision_db.sh
+      env:
+        HEROKU_APP_BASE_NAME: ${{ github.event.inputs.herokuAppBaseName }}
+        HEROKU_REGION: ${{ github.event.inputs.herokuRegion }}
